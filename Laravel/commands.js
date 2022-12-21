@@ -477,17 +477,21 @@
             // php artisan test 
             // php artisan test --exclude slow
             // php artisan test --group slow
+            // php artisan test --group getMethod,db
+                // https://stackoverflow.com/questions/36738631/running-tests-which-match-multiple-groups
+            // php artisan test --group getMethod --exclude db
             // php artisan test --stop-on-failure
             // php artisan test --filter SimplifiedAPIStructureTest
             // php artisan test --filter SimplifiedAPIStructureTest::test_get_a_response_from_each_endpoint_single_record
 
-                // run single file test
-                    // vendor/bin/phpunit --filter  CreatePaystubDocumentTest
-                        // vendor/bin/phpunit --filter SimplifiedAPIGeneralEndpointsTest
-                        // vendor/bin/phpunit --filter SimplifiedAPIControllerTest
-                        // vendor/bin/phpunit --filter 'Integration\\API'
-                    // php artisan test --filter  CreatePaystubDocumentTest
-                    // php artisan test --filter 'Integration\\API'
+            // run single file test
+                // vendor/bin/phpunit --filter  CreatePaystubDocumentTest
+                    // vendor/bin/phpunit --filter SimplifiedAPIGeneralEndpointsTest
+                    // vendor/bin/phpunit --filter SimplifiedAPIControllerTest
+                    // vendor/bin/phpunit --filter 'Integration\\API'
+                // php artisan test --filter  CreatePaystubDocumentTest
+                // php artisan test --filter 'Integration\\API'
+                // php artisan test --filter 'Unit\\PayrollProcessing\\D2D\\MultiYearBackend\\Queries\\SubscriptionQueryTest'
             
             // api seeder
             // php artisan db:seed --class="PayeeSeeder"
@@ -503,6 +507,10 @@
             // php artisan schedule:weekly -h
 
             // php artisan route:cache
+
+
+            // php artisan test --coverage-html ./phpunit-coverage-report
+        
 
  // @ Problems
     // TODO: get link and error message********
