@@ -11,11 +11,17 @@
         // docker-compose exec practice-app bash
     // vendor/bin/phpunit -h
         // help info
+    // ./vendor/bin/phpunit tests
+    // vendor/bin/phpunit tests
+    // vendor/bin/phpunit tests --colors
 
     // run single file test
         // vendor/bin/phpunit --filter  CreatePaystubDocumentTest
             // vendor/bin/phpunit --filter SimplifiedAPIStructureTest
         // php artisan test --filter  CreatePaystubDocumentTest
+
+    // run single test
+        // vendor/bin/phpunit --filter  test_name
         
 
     // To create a new test case, use the make:test Artisan command. By default, tests will be placed in the tests/Feature directory:
@@ -351,6 +357,9 @@
         // Debugging
         // DB::table('users')->where('votes', '>', 100)->dd();
         // DB::table('users')->where('votes', '>', 100)->dump();
+        // \DB::enableQueryLog();
+        // CtHypersensitivitySubscriber::query()->delete();
+        // dd(\DB::getQueryLog());
 
 // @ retrieving models from collections
     // $Projects = Project::all();
@@ -447,6 +456,7 @@
         // php artisan migrate:all --fresh --seed
         // php artisan db:seed --database=testing --class="PayPeriodSeeder"
         // php artisan migrate:fresh --database=testing --seed
+        // php artisan migrate --database=testing
 
         // * loading production data
             // download production data - Google Drive - Dev Team - Test Data
@@ -481,6 +491,7 @@
                 // https://stackoverflow.com/questions/36738631/running-tests-which-match-multiple-groups
             // php artisan test --group getMethod --exclude db
             // php artisan test --stop-on-failure
+            // php artisan test --exclude slow --stop-on-failure
             // php artisan test --filter SimplifiedAPIStructureTest
             // php artisan test --filter SimplifiedAPIStructureTest::test_get_a_response_from_each_endpoint_single_record
 
@@ -508,8 +519,9 @@
 
             // php artisan route:cache
 
-
+            
             // php artisan test --coverage-html ./phpunit-coverage-report
+            // php artisan test --exclude slow --coverage-html ./phpunit-coverage-report
         
 
  // @ Problems

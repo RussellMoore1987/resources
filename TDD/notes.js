@@ -12,6 +12,8 @@
 
     // Unit test, Test behavior not implementation
 
+    // Test what you set, unit tests and component integration tests specificity
+
     // Testing, an insurance that key features and functionality are working on every change that is implemented into the system
 
     // * [Tweet “Testing, at its core, is really about reducing risk.”]
@@ -29,6 +31,9 @@
     // Programmers should not test their own code. Actually they should, but so should somebody else :) 
         // Just like you should have somebody proofread your paper before handing it in, They notice things you don't.
 
+    // Given-When-Then
+    // or
+    // expect then Actual
 
     // * Given-When-Then 
         // Me WhenGiven-WhenAction-ThenResult
