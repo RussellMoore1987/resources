@@ -503,7 +503,9 @@
                 // php artisan test --filter  CreatePaystubDocumentTest
                 // php artisan test --filter 'Integration\\API'
                 // php artisan test --filter 'Unit\\PayrollProcessing\\D2D\\MultiYearBackend\\Queries\\SubscriptionQueryTest'
-            
+            // php artisan test --testsuite MyTestSuite
+            // php artisan test --testsuite Unit
+                
             // api seeder
             // php artisan db:seed --class="PayeeSeeder"
             // php artisan db:seed --class="PayPeriodSeeder"
@@ -522,6 +524,13 @@
             
             // php artisan test --coverage-html ./phpunit-coverage-report
             // php artisan test --exclude slow --coverage-html ./phpunit-coverage-report
+
+        //  * other 
+            // mock throw exception
+            // $this->mock(GoogleMapApi::class, function ($mock) { // this overrides the original mock
+            //     $mock->shouldReceive('setAddress')->andThrow(new \Exception('test'));
+            // });
+            
         
 
  // @ Problems
